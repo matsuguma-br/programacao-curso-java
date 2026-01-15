@@ -11,14 +11,27 @@ public class Main
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-
-		for(int x = 2; x < 10000; x++)
+		int[] x = new int[n];
+		
+		for(int i = 0; i < n; i++)
 		{
-			if(x % n == 2)
+			x[i] = sc.nextInt();
+		}
+		
+		int menor = x[0];
+		int pos = 0;
+		
+		for(int i = 1; i < n; i++)
+		{
+			if(x[i] < menor)
 			{
-				System.out.println(x);
+				menor = x[i];
+				pos = i;
 			}
 		}
+		
+		System.out.println("Menor valor: " + menor);
+		System.out.println("Posicao: " + pos);
 		
 		sc.close();
 	}
