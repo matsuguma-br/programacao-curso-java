@@ -11,27 +11,15 @@ public class Main
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		int[] x = new int[n];
+		int fat = n;
 		
-		for(int i = 0; i < n; i++)
+		// não tá entrando no for
+		for(int i = n - 1; i == 2; i--)
 		{
-			x[i] = sc.nextInt();
+			System.out.println(fat);
+			System.out.println(i);
+			fat *= i;
 		}
-		
-		int menor = x[0];
-		int pos = 0;
-		
-		for(int i = 1; i < n; i++)
-		{
-			if(x[i] < menor)
-			{
-				menor = x[i];
-				pos = i;
-			}
-		}
-		
-		System.out.println("Menor valor: " + menor);
-		System.out.println("Posicao: " + pos);
 		
 		sc.close();
 	}
