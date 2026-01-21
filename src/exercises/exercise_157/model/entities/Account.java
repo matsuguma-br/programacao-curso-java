@@ -1,6 +1,6 @@
 package exercises.exercise_157.model.entities;
 
-import example_153.model.exception.DomainException;
+import examples.example_153.model.exception.DomainException;
 
 public class Account
 {

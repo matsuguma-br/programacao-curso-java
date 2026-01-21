@@ -1,6 +1,6 @@
 package exercises.exercise_157.application;
 
-import example_153.model.exception.DomainException;
+import examples.example_153.model.exception.DomainException;
 import exercises.exercise_157.model.entities.Account;
 
 import java.util.Locale;

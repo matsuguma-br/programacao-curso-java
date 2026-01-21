@@ -11,14 +11,10 @@ public class Main
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		int fat = n;
 		
-		// não tá entrando no for
-		for(int i = n - 1; i == 2; i--)
+		for(int i = 1; i < n; i++)
 		{
-			System.out.println(fat);
-			System.out.println(i);
-			fat *= i;
+			System.out.print(i + (i - 1) + " ");
 		}
 		
 		sc.close();
